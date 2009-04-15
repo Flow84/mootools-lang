@@ -41,4 +41,4 @@ MooTools.lang.set('nl-NL', 'Date', {
 	dayUntil: '1 dag vanaf nu',
 	daysUntil: '{delta} dagen vanaf nu'
 
-})
+});

@@ -18,9 +18,9 @@ MooTools.lang.set('pl-PL', 'Date', {
 	days: function(i) {
 		return ['Niedziela', 'Poniedziałek', 'Wtorek', 'Środa', 'Czwartek', 'Piątek', 'Sobota'][i];
 	},
-	dateOrder: ['month', 'date', 'year', '/'],
-	AM: 'nad ranem',
-	PM: 'po południu',
+	dateOrder: ['date', 'month', 'year', '.'],
+	AM: '',
+	PM: '',
 
 	/* Date.Extras */
 	ordinal: function(dayOfMonth){
@@ -32,7 +32,7 @@ MooTools.lang.set('pl-PL', 'Date', {
 	minutesAgo: '{delta} minut temu',
 	hourAgo: 'około godzinę temu',
 	hoursAgo: 'około {delta} godzin temu',
-	dayAgo: '1 dzień temu',
+	dayAgo: 'Wczoraj',
 	daysAgo: '{delta} dni temu',
 	lessThanMinuteUntil: 'za niecałą minutę',
 	minuteUntil: 'za około minutę',
