@@ -13,16 +13,16 @@ Script: Date.German.js
 
 MooTools.lang.set('de-DE', 'Date', {
 
-	months: function(i) {
-		return ['Januar', 'Februar', 'M&auml;rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'][i];
-	},
-	days: function(i) {
-		return ['Sontag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'][i];
-	},
+	months: ['Januar', 'Februar', 'M&auml;rz', 'April', 'Mai', 'Juni', 'Juli', 'August', 'September', 'Oktober', 'November', 'Dezember'],
+	days: ['Sontag', 'Montag', 'Dienstag', 'Mittwoch', 'Donnerstag', 'Freitag', 'Samstag'],
 	//culture's date order: MM/DD/YYYY
 	dateOrder: [ 'date', 'month', 'year', '.'],
+
 	AM: 'vormittags',
 	PM: 'nachmittags',
+
+	shortDate: '%d.%m.%Y',
+	shortTime: '%H:%M',
 
 	/* Date.Extras */
 	ordinal: '.',
