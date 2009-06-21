@@ -53,14 +53,14 @@ MooTools.lang.set('ru-RU-unicode', 'Date', {
 	minutesAgo: function (delta) { return  '{delta} ' + this.pluralize(delta, 'минута', 'минуты', 'минут') + ' назад'},
 	hourAgo: 'час назад',
 	hoursAgo: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	dayAgo: 'день назад',
+	dayAgo: 'вчера',
 	daysAgo: function (delta) { return '{delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + ' назад' },
 	lessThanMinuteUntil: 'меньше минуты назад',
-	minuteUntil: 'минуту назад',
-	minutesUntil: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	hourUntil: 'около часа назад',
-	hoursUntil: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	dayUntil: 'вчера',
-	daysUntil: function (delta) { return '{delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + ' назад' }
+	minuteUntil: 'через минуту',
+	minutesUntil: function (delta) { return  'через {delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ''},
+	hourUntil: 'через час',
+	hoursUntil: function (delta) { return  'через {delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ''},
+	dayUntil: 'завтра',
+	daysUntil: function (delta) { return 'через {delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + '' }
 
 });
