@@ -35,7 +35,7 @@ MooTools.lang.set('cs-CZ', 'FormValidator', {
 	reqChkByNode: 'Nejsou vybrány žádné položky.',
 	requiredChk: 'Tato položka je vyžadována.',
 	reqChkByName: 'Prosím vyberte {label}.',
-	match: 'Tato položka se musí schodovat s položkou {matchName}',
+	match: 'Tato položka se musí shodovat s položkou {matchName}',
 	startDate: 'datum zahájení',
 	endDate: 'datum konce',
 	currendDate: 'aktuální datum',
