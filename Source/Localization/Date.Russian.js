@@ -20,9 +20,9 @@ MooTools.lang.set('ru-RU-unicode', 'Date', {
 
 	shortDate: '%d/%m/%Y',
 	shortTime: '%H:%M',
-  
-  
-  /* 
+
+
+  /*
    *  Russian language pluralization rules, taken from CLDR project, http://unicode.org/cldr/
    *
    *  one -> n mod 10 is 1 and n mod 100 is not 11;
@@ -30,11 +30,11 @@ MooTools.lang.set('ru-RU-unicode', 'Date', {
    *  many -> n mod 10 is 0 or n mod 10 in 5..9 or n mod 100 in 11..14;
    *  other -> everything else (example 3.14)
    */
-  
+
   pluralize: function (n, one, few, many, other) {
     var modulo10 = n % 10
     var modulo100 = n % 100
-    
+
     if (modulo10 == 1 && modulo100 != 11) {
       return one;
     } else if ((modulo10 == 2 || modulo10 == 3 || modulo10 == 4) && !(modulo100 == 12 || modulo100 == 13 || modulo100 == 14)) {
@@ -45,7 +45,7 @@ MooTools.lang.set('ru-RU-unicode', 'Date', {
       return other;
     }
   },
-  
+
 	/* Date.Extras */
 	ordinal: '',
 	lessThanMinuteAgo: 'меньше минуты назад',
@@ -53,14 +53,14 @@ MooTools.lang.set('ru-RU-unicode', 'Date', {
 	minutesAgo: function (delta) { return  '{delta} ' + this.pluralize(delta, 'минута', 'минуты', 'минут') + ' назад'},
 	hourAgo: 'час назад',
 	hoursAgo: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	dayAgo: 'день назад',
+	dayAgo: 'вчера',
 	daysAgo: function (delta) { return '{delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + ' назад' },
 	lessThanMinuteUntil: 'меньше минуты назад',
-	minuteUntil: 'минуту назад',
-	minutesUntil: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	hourUntil: 'около часа назад',
-	hoursUntil: function (delta) { return  '{delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ' назад'},
-	dayUntil: 'вчера',
-	daysUntil: function (delta) { return '{delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + ' назад' }
+	minuteUntil: 'через минуту',
+	minutesUntil: function (delta) { return  'через {delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ''},
+	hourUntil: 'через час',
+	hoursUntil: function (delta) { return  'через {delta} ' + this.pluralize(delta, 'час', 'часа', 'часов') + ''},
+	dayUntil: 'завтра',
+	daysUntil: function (delta) { return 'через {delta} ' + this.pluralize(delta, 'день', 'дня', 'дней') + '' }
 
 });
