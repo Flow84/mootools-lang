@@ -7,6 +7,11 @@
 			"desc": "Date messages in Catalan."
 		},
 
+		"Date.Czech": {
+			"deps": ["Lang"],
+			"desc": "Date messages in Czech."
+		},
+
 		"Date.Danish": {
 			"deps": ["Lang"],
 			"desc": "Date messages in Danish."
@@ -75,6 +80,11 @@
 		"FormValidator.Catalan": {
 			"deps": ["Lang"],
 			"desc": "FormValidator messages in Catalan."
+		},
+
+		"FormValidator.Czech": {
+			"deps": ["Lang"],
+			"desc": "FormValidator messages in Czech."
 		},
 
 		"FormValidator.Chinese": {
